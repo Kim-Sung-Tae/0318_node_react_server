@@ -17,8 +17,6 @@ router.get('/sql',(req,res)=>{
 })
 
 
-
-
 router.get('/',(req,res)=>{
     res.send( '/sqlsend  sql send Page ')
 })
