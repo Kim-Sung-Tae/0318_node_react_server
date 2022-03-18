@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-
+    "react": "cd front && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node kst.js"
+    "start": "nodemon kst.js",
+    "dev" : "concurrently --kill-others-on-fail \"npm run start \" \" npm run react \" "
   },
   "author": "",
   "license": "ISC",
